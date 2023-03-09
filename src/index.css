@@ -38,8 +38,19 @@ code {
 
 .mainContent {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
   height: 100vh;
-  padding: 0 2%;
+  padding: 1% 2%;
+}
+
+.headerToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 @media screen and (max-width: 770px) {

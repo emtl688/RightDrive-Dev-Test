@@ -28,13 +28,12 @@ const CardsView = () => {
             key={coin.id}
             sx={{
               margin: "0.5em",
-              width: "23%",
-              maxHeight: "100%",
+              width: "22%",
               border: "3px solid black",
             }}
           >
             <CardMedia
-              sx={{ height: 160, borderBottom: "1px solid black" }}
+              sx={{ height: 170, borderBottom: "1px solid black" }}
               image={coin.image}
               title="coin symbol"
             />
@@ -44,8 +43,8 @@ const CardsView = () => {
               </h4>
               <p>Current Price: {priceFormatter.format(coin.current_price)}</p>
               <p>All Time High: {priceFormatter.format(coin.ath)}</p>
-              <p>Total Volume: {priceFormatter.format(coin.total_volume)}</p>
               <p>Market Cap: {priceFormatter.format(coin.market_cap)}</p>
+              <p>Total Volume: {priceFormatter.format(coin.total_volume)}</p>
             </CardContent>
           </Card>
         ))}
@@ -55,24 +54,24 @@ const CardsView = () => {
         <Pagination
           color="primary"
           variant="outlined"
-          size="large"
+          size="medium"
           count={totalPages}
           page={currentPage}
           onChange={handlePageChange}
           sx={{
-            ".css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root": {
+            ".css-1y7coo4-MuiButtonBase-root-MuiPaginationItem-root": {
               color: "white",
               border: "1px solid white",
               backgroundColor: "#ffffff1a",
             },
-            ".css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected":
+            ".css-1y7coo4-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected":
               {
                 color: "#0080ff",
                 border: "2px solid #0080ff",
                 backgroundColor: "rgb(25 118 210 / 31%)",
-                fontWeight: "bold"
+                fontWeight: "bold",
               },
-            ".css-1scal0h-MuiPaginationItem-root": {
+            ".css-1v2lvtn-MuiPaginationItem-root": {
               color: "white",
             },
           }}

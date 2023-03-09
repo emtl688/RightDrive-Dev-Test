@@ -26,11 +26,16 @@ const CryptosList = () => {
             onChange={handleAlignment}
             aria-label="toggle view"
             sx={{
-              margin: "0.1em",
               "& .MuiToggleButton-root": {
-                border: "1px solid #FFFFFF",
+                border: "1px solid white",
                 color: "#FFFFFF",
+                fontWeight: "bold"
               },
+              ".css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected": {
+                color: "#0080ff",
+                backgroundColor: "rgb(25 118 210 / 31%)",
+                fontWeight: "bold"
+              }
             }}
           >
             <ToggleButton value="cards" aria-label="Cards View">

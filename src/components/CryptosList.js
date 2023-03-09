@@ -1,13 +1,10 @@
 import { useState } from "react";
-// import { useSelector } from "react-redux";
 import { Box } from "@mui/system";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
-import CryptoCard from "./CryptoCard";
+import CardsView from "./CardsView";
 import ListView from "./ListView";
 
 const CryptosList = () => {
-  //   const cryptos = useSelector((state) => state?.data?.data);
-  //   console.log(cryptos);
   const [alignment, setAlignment] = useState("cards");
 
   const handleAlignment = (event, newAlignment) => {
@@ -17,10 +14,10 @@ const CryptosList = () => {
   };
 
   return (
-    <Box className="mainContent">
+    <Box className="mainContainer">
       {/* Content Header and Toggle Buttons */}
       <Box className="headerToggle">
-        <h2 style={{ margin: 0 }}>Featured Cryptocurrencies</h2>
+        <h2 style={{ margin: 0 }}>Featured Cryptocurrencies (Top 100)</h2>
         <Box>
           <ToggleButtonGroup
             color="primary"
@@ -45,8 +42,10 @@ const CryptosList = () => {
           </ToggleButtonGroup>
         </Box>
       </Box>
-      {/* Conditionally rendered views of cryptos  (cards/list) */}
-      <Box>{alignment === "cards" ? <CryptoCard /> : <ListView />}</Box>
+      {/* Conditionally rendered views of cryptos (cards/list) */}
+      <Box sx={{ width: "100%" }}>
+        {alignment === "cards" ? <CardsView /> : <ListView />}
+      </Box>
     </Box>
   );
 };

@@ -1,3 +1,3 @@
-export function setData(data) {
-  return { type: "setData", payload: data };
+export function listCryptos(data) {
+  return { type: "listCryptos", payload: data };
 }

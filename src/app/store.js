@@ -8,7 +8,7 @@ const initialState = {
 // Define a reducer function to update the state
 function dataReducer(state = initialState, action) {
   switch (action.type) {
-    case "setData":
+    case "listCryptos":
       return { ...state, data: action.payload };
     default:
       return state;

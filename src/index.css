@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
 body {
@@ -12,8 +11,13 @@ code {
     monospace;
 }
 
+p {
+  font-size: 0.8em;
+  margin: 0.1em;
+}
+
 .App {
-  background-color: #1e2125;
+  background-color: #272b30;
   height: 100vh;
   max-width: 100vw;
   display: flex;
@@ -33,14 +37,13 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 18%;
+  width: 20%;
 }
 
-.mainContent {
+.mainContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: space-between; */
   height: 100vh;
   padding: 1% 2%;
 }
@@ -51,6 +54,20 @@ code {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 1em;
+}
+
+.cardsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 770px) {

@@ -22,7 +22,7 @@ const CardsView = () => {
 
   return (
     <>
-      <Box className="cardsContainer">
+      <Box data-testid="cardsView" className="cardsContainer">
         {currentItems.map((coin) => (
           <Card
             key={coin.id}

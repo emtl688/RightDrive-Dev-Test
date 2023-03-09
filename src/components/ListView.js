@@ -32,7 +32,7 @@ const ListView = () => {
 
   return (
     <>
-      <Box sx={{ marginBottom: "1em" }}>
+      <Box data-testid="listView" sx={{ marginBottom: "1em" }}>
         <TableContainer component={Paper}>
           <Table aria-label="crypto table">
             <TableHead>

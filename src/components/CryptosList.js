@@ -14,7 +14,7 @@ const CryptosList = () => {
   };
 
   return (
-    <Box className="mainContainer">
+    <Box data-testid="cryptosList" className="mainContainer">
       {/* Content Header and Toggle Buttons */}
       <Box className="headerToggle">
         <h2 style={{ margin: 0 }}>Featured Cryptocurrencies (Top 100)</h2>

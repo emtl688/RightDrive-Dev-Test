@@ -4,7 +4,7 @@ import Link from '@mui/material/Link';
 
 const Header = () => {
   return (
-    <Box className="header">
+    <Box data-testid="header" className="header">
         <h1 style={{ margin: "0.35em" }}>RightDrive Dev Test</h1>
         <Box className="aboutDev">
             <span style={{paddingBottom: "5px"}}>By: &nbsp;Eric Moran</span>

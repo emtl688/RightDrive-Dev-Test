@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Box className="App">
+    <Box data-testid="app" className="App">
       <Header />
       <CryptosList />
     </Box>

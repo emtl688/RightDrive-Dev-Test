@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
 
 body {
   margin: 0;
@@ -8,12 +8,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -83,4 +83,34 @@ p {
   .aboutDev {
     width: 90%;
   }
+}
+
+/* POST DEPLOYEMENT MUI STYLES */
+
+/* pagination item not selected */
+.css-1b5ei7m {
+  color: white;
+  border: 1px solid white;
+  background-color: #ffffff1a;
+}
+
+/* pagination item selected */
+.css-1b5ei7m.Mui-selected {
+  color: "#0080ff";
+  border: "2px solid #0080ff";
+  background-color: "rgb(25 118 210 / 31%)";
+  font-weight: "bold";
+}
+
+/* toggle view button - selected */
+.css-1cmnqml.Mui-selected {
+  color: "#0080ff";
+  background-color: "rgb(25 118 210 / 31%)";
+  font-weight: "bold";
+}
+
+.css-1cmnqml {
+  border: "1px solid white";
+  color: "#FFFFFF";
+  font-weight: "bold";
 }

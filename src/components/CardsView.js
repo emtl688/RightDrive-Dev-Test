@@ -74,6 +74,17 @@ const CardsView = () => {
             ".css-1v2lvtn-MuiPaginationItem-root": {
               color: "white",
             },
+            ".css-1b5ei7m": {
+              color: "white",
+              border: "1px solid white",
+              backgroundColor: "#ffffff1a",
+            },
+            ".css-1b5ei7m.Mui-selected": {
+              color: "#0080ff",
+              border: "2px solid #0080ff",
+              backgroundColor: "rgb(25 118 210 / 31%)",
+              fontWeight: "bold",
+            },
           }}
         />
       </Box>

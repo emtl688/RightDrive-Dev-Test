@@ -37,11 +37,36 @@ const ListView = () => {
           <Table aria-label="crypto table">
             <TableHead>
               <TableRow>
-                <TableCell size="small" sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}>Name</TableCell>
-                <TableCell size="small" sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}>Current Price</TableCell>
-                <TableCell size="small" sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}>All Time High</TableCell>
-                <TableCell size="small" sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}>Market Cap.</TableCell>
-                <TableCell size="small" sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}>Total Volume</TableCell>
+                <TableCell
+                  size="small"
+                  sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}
+                >
+                  Name
+                </TableCell>
+                <TableCell
+                  size="small"
+                  sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}
+                >
+                  Current Price
+                </TableCell>
+                <TableCell
+                  size="small"
+                  sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}
+                >
+                  All Time High
+                </TableCell>
+                <TableCell
+                  size="small"
+                  sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}
+                >
+                  Market Cap.
+                </TableCell>
+                <TableCell
+                  size="small"
+                  sx={{ fontWeight: "bold", borderBottom: "1px solid black" }}
+                >
+                  Total Volume
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -95,6 +120,17 @@ const ListView = () => {
               },
             ".css-1v2lvtn-MuiPaginationItem-root": {
               color: "white",
+            },
+            ".css-1b5ei7m": {
+              color: "white",
+              border: "1px solid white",
+              backgroundColor: "#ffffff1a",
+            },
+            ".css-1b5ei7m.Mui-selected": {
+              color: "#0080ff",
+              border: "2px solid #0080ff",
+              backgroundColor: "rgb(25 118 210 / 31%)",
+              fontWeight: "bold",
             },
           }}
         />

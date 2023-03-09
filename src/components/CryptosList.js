@@ -29,13 +29,24 @@ const CryptosList = () => {
               "& .MuiToggleButton-root": {
                 border: "1px solid white",
                 color: "#FFFFFF",
-                fontWeight: "bold"
+                fontWeight: "bold",
               },
-              ".css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected": {
+              ".css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected":
+                {
+                  color: "#0080ff",
+                  backgroundColor: "rgb(25 118 210 / 31%)",
+                  fontWeight: "bold",
+                },
+              ".css-1cmnqml": {
+                border: "1px solid white",
+                color: "#FFFFFF",
+                fontWeight: "bold",
+              },
+              ".css-1cmnqml.Mui-selected": {
                 color: "#0080ff",
                 backgroundColor: "rgb(25 118 210 / 31%)",
-                fontWeight: "bold"
-              }
+                fontWeight: "bold",
+              },
             }}
           >
             <ToggleButton value="cards" aria-label="Cards View">
